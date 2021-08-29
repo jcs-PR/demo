@@ -321,8 +321,6 @@
 
     let docPath = base + docBase + '/' + page + '.html';
 
-    console.log(docPath);
-
     $.get(docPath, function(result) {
       content.html(result);
 
