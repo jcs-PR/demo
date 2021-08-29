@@ -296,7 +296,7 @@
   function loadContent() {
     let url = window.location.href;
     let type = basePath(window.location.pathname);
-    let base = '..' + type;
+    let base = type;
     let docBase = '';
 
     if (type === '/Manual') {
@@ -318,6 +318,9 @@
       docBase = "";
       page = "intro";
     }
+
+    console.log(window.location.origin);
+    console.log(base);
 
     let docPath = base + docBase + '/' + page + '.html';
 
