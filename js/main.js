@@ -300,9 +300,6 @@
     let type = filename(loc);
     let docBase = '';
 
-    console.log(loc);
-    console.log(type);
-
     if (type === 'Manual') {
       document.title = manual_name + ' - Scripting Manual';
       scrollBarTitle.text(manual_name + " Manul");
@@ -322,9 +319,6 @@
       docBase = "";
       page = "intro";
     }
-
-    console.log(window.location.origin);
-    console.log(base);
 
     let docPath = base + docBase + '/' + page + '.html';
 
