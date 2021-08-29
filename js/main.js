@@ -299,6 +299,8 @@
     let base = type;
     let docBase = '';
 
+    console.log(type);
+
     if (type === '/Manual') {
       document.title = manual_name + ' - Scripting Manual';
       scrollBarTitle.text(manual_name + " Manul");
