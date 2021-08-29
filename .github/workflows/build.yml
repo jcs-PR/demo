@@ -27,7 +27,7 @@ jobs:
       run: npm install --global @siradoc/siradoc
 
     - name: Build website
-      run: @siradoc/siradoc docs build
+      run: siradoc docs build
 
     - name: Clone branch gh-pages
       uses: actions/checkout@v2
